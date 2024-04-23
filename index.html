@@ -21,7 +21,7 @@ header {
 
 <body>
     <header>
-        <h1>Welcome to My Website</h1>
+        <h1 id="typewriter"></h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -39,6 +39,18 @@ header {
     <footer>
         <p>&copy; 2024 Jstisya Website. All rights reserved.</p>
     </footer>
+    <script>var text = "Welcome to My Website";
+        var speed = 100; // milliseconds per character
+        
+        function typeWriter() {
+            if (text.length > 0) {
+                document.getElementById("typewriter").innerHTML += text.charAt(0);
+                text = text.substring(1);
+                setTimeout(typeWriter, speed);
+            }
+        }
+        
+        typeWriter();</script>
 </body>
 </html>
 

@@ -19,16 +19,22 @@
     </header>
     <main>
         <h2>Photo Gallery</h2>
-        <div class="gallery">
-            <img src="spidey1.jpeg" alt="Photo 1">
-            <img src="Screenshot (44).png" alt="Photo 1">
-            <img src="spidey2.jpeg" alt="Photo 3">
+        <div class="gallery" id="galleryContainer">
+            
         </div>
+        <div style="padding-top: 20px;">
+           
+            <a href="#gallery" class="buttonClass" onclick="loadGallery()" id="loadGalleryButton" style="padding: 10px;">Tekan Untuk Melihat Gallery</a>
+            <a href="#gallery" class="buttonClass" onclick="previousGallery()" id="previousGalleryButton" style="display: none">Sebelumnya</a>
+            <a href="#gallery" class="buttonClass" onclick="nextGallery()" id="nextGalleryButton" style="display: none;">next</a>
+        </div>
+       
     </main>
     <footer>
         <p>&copy; 2024 Jstisya Website. All rights reserved.</p>
     </footer>
 </body>
+<script src="script.js"></script>
 </html>
 
 
